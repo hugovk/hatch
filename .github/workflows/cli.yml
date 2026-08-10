@@ -22,15 +22,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
 
     - name: Set up Python ${{ env.STABLE_PYTHON_VERSION }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v7
       with:
         python-version: ${{ env.STABLE_PYTHON_VERSION }}
 
     - name: Install UV
-      uses: astral-sh/setup-uv@v3
+      uses: astral-sh/setup-uv@v7
 
     - name: Install hyperfine
       uses: taiki-e/install-action@v2
